@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.berita-section {
+    width: 100%;
+    height: 101rem;
+    position: relative;
+    background: url(../assets/img/bg-2.jpg);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.berita-container {
+    width: 74rem;
+    height: 54rem;
+    position: absolute;
+    
+}
+
+.berita-title {
+    color: #212427;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 3.3rem;
+}
+
+.navmenu-berita{
+    background: linear-gradient(249deg, #59FFB9 -31.85%, #326CFF 101.31%);
+    padding: 0.625rem 1.25rem;
+    margin-bottom: 3.1rem;
+}
+
+.navmenu-berita a{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+
+.berita-content {
+    width: 74rem;
+    height: 48rem;
+}
+
+.card-artikel-size:hover .img-artikel-size,
+.card-timestamp-size:hover .img-timestamp-size {
+    transform: scale(1.1);
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.card-artikel-size:hover .card-title-artikel,
+.card-timestamp-size:hover .card-title-timestamp {
+    color: #FF9A3C !important;
+    cursor: pointer;
+}
+
+.card-artikel-size,
+.card-timestamp-size {
+    overflow: hidden;
+}
+
+
+

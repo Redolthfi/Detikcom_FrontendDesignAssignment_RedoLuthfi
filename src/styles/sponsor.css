@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sponsor-section {
+    width: 100%;
+    height: 21rem;
+    background: linear-gradient(249deg, #59FFB9 -31.85%, #326CFF 101.31%);
+    padding: 3.75rem 0rem;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.sponsor-title {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.container-title {
+    height: 2.7rem;
+    width: 20rem;
+}
+
+.logos {
+    overflow: hidden;
+    padding: 3.75rem;
+    white-space: nowrap;
+}
+
+.logo-slide {
+    display: inline-block;
+    animation: 8s slide infinite linear;
+}
+
+.logo-slide img {
+    height: 5.8rem;
+    width: 14.5rem;
+    margin: 0 0.5rem;
+}

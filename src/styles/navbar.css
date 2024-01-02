@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.navbars {
+    width: 74rem;
+    height: auto;
+    padding: 1.5rem 2rem;
+    gap: 7.5rem;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(1.5rem);
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-top: 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    height: auto;
+}
+
+.nav-menu a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;  
+    cursor: pointer;
+}
+
+.nav-menu a:hover {
+    transform: scale(1.05); /* Atur nilai scaling sesuai kebutuhan Anda */
+}
+
+.nav-register-button {
+    border-radius: 6rem;
+    background: var(--primary-gradient, linear-gradient(258deg, #59FFB9 0%, #326CFF 100%));
+    padding: 0.6rem 1.25rem;
+}
+
+.nav-register-button a {
+    color: #FFF;
+}
