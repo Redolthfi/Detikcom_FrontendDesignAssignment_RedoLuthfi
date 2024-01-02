@@ -1,5 +1,4 @@
 import "../styles/sponsor.css"
-import { Container, Row, Col } from 'react-bootstrap';
 import LogoJwc from '../assets/img/frame1.png'
 import Logo2 from '../assets/img/frame2.png'
 import Logo3 from '../assets/img/frame3.png'

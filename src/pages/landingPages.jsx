@@ -12,19 +12,15 @@ const LandingPages = () => {
             </section>
             <section id="tentang-acara">
                 <AboutSection />
-                {/* Konten untuk bagian Tentang Acara */}
             </section>
             <section id="galeri">
                 <GallerySection />
-                {/* Konten untuk bagian Galeri */}
             </section>
             <Sponsor />
             <section id="berita">
-                {/* Konten untuk bagian Berita */}
                 <BeritaSection />
             </section>
             <section id="registrasi">
-                {/* Konten untuk bagian Registrasi */}
                 <Footer />
             </section>
 

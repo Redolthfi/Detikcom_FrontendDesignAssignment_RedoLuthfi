@@ -16,7 +16,7 @@
 .timestamp {
     width: 4rem;
     height: 1.5rem;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     background: rgba(33, 36, 39, 0.50);
     position: absolute;
     right: 0;
@@ -30,7 +30,7 @@
 .timestamp h5 {
     color: #FFF;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 0.7rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -48,7 +48,7 @@
 .card-title-timestamp {
     color: #212427 !important;
     font-family: Montserrat !important;
-    font-size: 16px !important;
+    font-size: 1rem !important;
     font-style: normal !important;
     font-weight: 700 !important;
     line-height: normal !important;
@@ -57,7 +57,7 @@
 .card-text-timestamp{
     color: #6C6C6C !important;
     font-family: Montserrat !important;
-    font-size: 12px !important;
+    font-size: 0.7rem !important;
     font-style: normal !important;
     font-weight: 500 !important;
     line-height: normal !important;

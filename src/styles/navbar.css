@@ -59,7 +59,7 @@
       position: absolute;
       width: 100%;
       height: auto;
-      top: 70px; /* Sesuaikan dengan tinggi navbar */
+      top: 4.3rem; /* Sesuaikan dengan tinggi navbar */
       left: 0;
       right: 0;
       background: rgba(255, 255, 255, 0.50);
