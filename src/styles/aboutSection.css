@@ -135,3 +135,18 @@
     font-weight: 600;
     line-height: normal;
 }
+
+@media only screen and (max-width: 768px) {
+    .container-about-items {
+        flex-direction: column; /* Ubah flex direction menjadi column saat layar kecil */
+    }
+
+    
+
+    .card-size,
+    .card-1,
+    .card-2,
+    .card-3 {
+        max-width: 100%; /* Mengisi lebar sesuai dengan lebar layar pada layar kecil */
+    }
+}

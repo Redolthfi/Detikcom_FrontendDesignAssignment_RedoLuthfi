@@ -54,6 +54,7 @@ const ImageSlider = ({ images }) => {
 
     };
 
+
     const thumbnailStyle = {
         width: "16rem",
         height: "9rem",
@@ -63,6 +64,7 @@ const ImageSlider = ({ images }) => {
         marginRight: "0.8rem",
         filter: currentImage === images.length - 1 ? "grayscale(100%)" : "none", 
     };
+    
 
     const handleLeftArrow = () => {
         setCurrentImage(currentImage - 1)

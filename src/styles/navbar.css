@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
+
 .navbars {
     width: 74rem;
     height: auto;
@@ -11,9 +12,9 @@
     background: rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(1.5rem);
     z-index: 1;
-    position: fixed;
     left: 0;
     right: 0;
+    position: fixed;
     margin-top: 2rem;
 }
 
@@ -34,7 +35,7 @@
 }
 
 .nav-menu a:hover {
-    transform: scale(1.05); /* Atur nilai scaling sesuai kebutuhan Anda */
+    transform: scale(1.05); 
 }
 
 .nav-register-button {
@@ -46,3 +47,47 @@
 .nav-register-button a {
     color: #FFF;
 }
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .navbars.active .nav-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 70px; /* Sesuaikan dengan tinggi navbar */
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.50);
+      backdrop-filter: blur(1.5rem);
+      border-radius: 0 0 2rem 2rem;
+      z-index: 1;
+    }
+  
+    .nav-menu a {
+      display: block;
+      padding: 1rem;
+      /* text-align: center; */
+    }
+
+    .nav-register-button {
+      margin-bottom: 1rem;
+    }
+
+
+    .nav-register-button {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .category {
+      display: none;
+    }
+  }
+  
+  

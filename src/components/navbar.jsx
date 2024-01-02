@@ -1,17 +1,23 @@
-// Navbar.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import navbarImg from "../assets/img/navbar-brand.png";
-import '../styles/navbar.css'
+import categoryImg from "../assets/img/category.png";
+import '../styles/navbar.css';
 
 const Navbar = () => {
+    const [showNavMenu, setShowNavMenu] = useState(false);
+
+    const toggleNavMenu = () => {
+        setShowNavMenu(!showNavMenu);
+    };
+
     return (
         <>
-            <div className="navbars rounded-pill d-flex mx-auto align-items-center">
+            <div className={`navbars rounded-pill d-flex mx-auto align-items-center ${showNavMenu ? 'active' : ''}`}>
                 <div>
                     <img src={navbarImg} alt="" />
                 </div>
-                <div className="nav-menu justify-content-around">
+                <div className={`nav-menu justify-content-around ${showNavMenu ? 'active' : ''}`}>
                     <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
                     <ScrollLink to="tentang-acara" smooth={true} duration={500}>Tentang Acara</ScrollLink>
                     <ScrollLink to="galeri" smooth={true} duration={500}>Galeri</ScrollLink>
@@ -20,9 +26,10 @@ const Navbar = () => {
                         <a href="https://event.detik.com/" target="_blank" rel="noopener noreferrer">Registrasi</a>
                     </div>
                 </div>
+                <img src={categoryImg} alt="" className="category" onClick={toggleNavMenu} />
             </div>
         </>
-    )
-}
+    );
+};
 
 export default Navbar;
