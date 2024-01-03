@@ -6,7 +6,7 @@ import artikelImg3 from '../assets/img/thumbnail-artikel-3.png';
 import artikelImg4 from '../assets/img/thumbnail-artikel-4.png';
 import artikelImg5 from '../assets/img/thumbnail-artikel-5.png';
 import artikelImg6 from '../assets/img/thumbnail-artikel-6.png';
-import CameraIcon from '../assets/img/camera.png';
+import CameraIcon from '../assets/img/cameraIcon.png';
 import CardTimeStamp from '../components/cardTimeStamp';
 import CardArtikel from '../components/cardArtikel';
 import PlayIcon from '../assets/img/play.png';
