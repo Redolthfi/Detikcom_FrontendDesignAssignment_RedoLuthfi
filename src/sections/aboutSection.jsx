@@ -37,11 +37,11 @@ const AboutSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="d-flex justify-content-center">
-                    <Buttons>
-                <a href="https://event.detik.com/" target="_blank" rel="noopener noreferrer">
-                Daftar Sekarang
-                </a>
+            <div className="d-flex justify-content-center container-button-about ">
+                <Buttons>
+                    <a href="https://event.detik.com/" target="_blank" rel="noopener noreferrer">
+                        Daftar Sekarang
+                    </a>
                 </Buttons>
             </div>
         </div>

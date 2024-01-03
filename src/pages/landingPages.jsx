@@ -8,21 +8,25 @@ const LandingPages = () => {
     return (
         <>
             <section id="home">
+                {/* Sudah Responsif */}
                 <HeroSection />
             </section>
             <section id="tentang-acara">
+                {/* Sudah Responsif */}
                 <AboutSection />
             </section>
             <section id="galeri">
                 <GallerySection />
             </section>
+            {/* Sudah Responsif */}
             <Sponsor />
             <section id="berita">
                 <BeritaSection />
+                
             </section>
             <section id="registrasi">
-                <Footer />
             </section>
+            <Footer />
 
         </>
     )

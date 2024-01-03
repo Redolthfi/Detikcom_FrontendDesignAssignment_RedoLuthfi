@@ -14,10 +14,10 @@ const Navbar = () => {
     return (
         <>
             <div className={`navbars rounded-pill d-flex mx-auto align-items-center ${showNavMenu ? 'active' : ''}`}>
-                <div>
-                    <img src={navbarImg} alt="" />
+                <div className="navimg-container">
+                    <img src={navbarImg} alt="" className='nav-img'/>
                 </div>
-                <div className={`nav-menu justify-content-around ${showNavMenu ? 'active' : ''}`}>
+                <div className={`nav-menu  ${showNavMenu ? 'active' : ''}`}>
                     <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
                     <ScrollLink to="tentang-acara" smooth={true} duration={500}>Tentang Acara</ScrollLink>
                     <ScrollLink to="galeri" smooth={true} duration={500}>Galeri</ScrollLink>
@@ -26,7 +26,9 @@ const Navbar = () => {
                         <a href="https://event.detik.com/" target="_blank" rel="noopener noreferrer">Registrasi</a>
                     </div>
                 </div>
+                <div className="tests">
                 <img src={categoryImg} alt="" className="category" onClick={toggleNavMenu} />
+                </div>
             </div>
         </>
     );

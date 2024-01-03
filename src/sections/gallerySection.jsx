@@ -12,7 +12,7 @@ const GallerySection = () => {
         <>
             <div className="gallery-section">
                 <div className="gallery-container mx-auto">
-                    <h5 className="gallery-title mx-auto ">GALLERY SUDIRMAN RUN 2022</h5>
+                    <h5 className="gallery-title mx-auto mb-5 ">GALLERY SUDIRMAN RUN 2022</h5>
                     <div className="gallery-slider ">
                         <ImageSlider images={images} />
                     </div>

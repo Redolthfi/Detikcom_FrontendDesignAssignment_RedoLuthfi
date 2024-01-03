@@ -136,12 +136,26 @@
     line-height: normal;
 }
 
-@media only screen and (max-width: 768px) {
-    .container-about-items {
-        flex-direction: column; /* Ubah flex direction menjadi column saat layar kecil */
+@media only screen and (max-width: 769px)   {
+    .about-section {
+        width: 100%;
+        height: auto;
+        padding-bottom: 5rem;
     }
 
-    
+    .container-about-items {
+        width: auto;
+        overflow: visible;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .container-button-about {
+        display: flex;
+    }
 
     .card-size,
     .card-1,

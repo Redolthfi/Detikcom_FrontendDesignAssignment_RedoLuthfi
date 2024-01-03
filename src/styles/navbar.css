@@ -1,93 +1,121 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .navbars {
-    width: 74rem;
+  width: 74rem;
+  height: auto;
+  padding: 1.5rem 2rem;
+  /* gap: 7.5rem; */
+  background: rgba(255, 255, 255, 0.50);
+  backdrop-filter: blur(1.5rem);
+  z-index: 1;
+  left: 0;
+  right: 0;
+  position: fixed;
+  margin-top: 2rem;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  gap:1rem;
+  width: 100%;
+  height: auto;
+  margin-left: 10rem;
+  
+}
+
+.nav-menu a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-menu a:hover {
+  transform: scale(1.05);
+}
+
+.nav-register-button {
+  border-radius: 6rem;
+  background: var(--primary-gradient, linear-gradient(258deg, #59FFB9 0%, #326CFF 100%));
+  padding: 0.6rem 1.25rem;
+}
+
+.nav-register-button a {
+  color: #FFF;
+}
+
+.navimg-container{
+  margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .navbars {
+    width: 90%;
     height: auto;
     padding: 1.5rem 2rem;
     gap: 7.5rem;
     background: rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(1.5rem);
     z-index: 1;
-    left: 0;
-    right: 0;
+    margin-left: 2rem;
     position: fixed;
     margin-top: 2rem;
-}
+  }
 
-.nav-menu {
+  .navbars.active .nav-menu {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 3rem;
+    flex-direction: column;
+    position: absolute;
     width: 100%;
     height: auto;
-}
-
-.nav-menu a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;  
-    cursor: pointer;
-}
-
-.nav-menu a:hover {
-    transform: scale(1.05); 
-}
-
-.nav-register-button {
-    border-radius: 6rem;
-    background: var(--primary-gradient, linear-gradient(258deg, #59FFB9 0%, #326CFF 100%));
-    padding: 0.6rem 1.25rem;
-}
-
-.nav-register-button a {
-    color: #FFF;
-}
-
-@media only screen and (max-width: 768px) {
-    .nav-menu {
-      display: none;
-    }
-  
-    .navbars.active .nav-menu {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      width: 100%;
-      height: auto;
-      top: 4.3rem; /* Sesuaikan dengan tinggi navbar */
-      left: 0;
-      right: 0;
-      background: rgba(255, 255, 255, 0.50);
-      backdrop-filter: blur(1.5rem);
-      border-radius: 0 0 2rem 2rem;
-      z-index: 1;
-    }
-  
-    .nav-menu a {
-      display: block;
-      padding: 1rem;
-      /* text-align: center; */
-    }
-
-    .nav-register-button {
-      margin-bottom: 1rem;
-    }
-
-
-    .nav-register-button {
-      margin-top: 1rem;
-    }
+    right: 0.1rem;
+    top: 4.3rem;
+    justify-content: center;
+    background: rgba( 255, 255, 255, 0.50);
+    /* background: red; */
+    backdrop-filter: blur(1.5rem);
+    border-radius: 1rem 1rem 3rem 3rem;
+    z-index: 1;
   }
-  
-  @media only screen and (min-width: 769px) {
-    .category {
-      display: none;
-    }
+
+  .nav-menu a {
+    display: block;
   }
-  
-  
+
+  .nav-register-button {
+    margin-bottom: 1rem;
+  }
+
+  .nav-register-button {
+    margin-top: 1rem;
+  }
+
+  .nav-img {
+    width: 10rem;
+    height: auto;
+  }
+
+  .tests {
+    right: 0;
+    display: flex;
+    position: absolute;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .category {
+    display: none;
+  }
+
+}

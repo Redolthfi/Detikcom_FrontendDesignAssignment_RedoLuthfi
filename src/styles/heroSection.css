@@ -28,18 +28,16 @@
 
 @media only screen and (max-width: 768px) {
     .hero-section {
-        text-align: center;
+        width: 100%;
+        position: relative;
         background: url(../assets/img/Hero.png);
         background-size: cover;
-        /* Mengisi layar dan mempertahankan rasio aspek */
-        position: relative;
         background-repeat: no-repeat;
         background-position: center center;
-        width: 100%;
     }
 
     .container-items {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
         position: absolute;
@@ -48,9 +46,19 @@
         transform: translate(-50%, -50%);
         width: 90%;
         text-align: center;
+
     }
 
     .event-logo-size {
-        max-width: 100%;
+        max-width: 80%;
+    }
+
+    .container-button-hero {
+        justify-content: start;
+        display: flex;
+        margin-left: 4rem;
+
+
+
     }
 }

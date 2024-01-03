@@ -12,7 +12,7 @@ const HeroSection = () => {
                     <div>
                         <img src={LogoEvent} alt="" className="event-logo-size" />
                     </div>
-                    <div>
+                    <div className="container-button-hero">
                         <ScrollLink to="tentang-acara" smooth={true} duration={500}>
                             <Buttons >Tentang Acara</Buttons>
                         </ScrollLink>

@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 .berita-section {
     width: 100%;
     height: 101rem;
     position: relative;
     background: url(../assets/img/bg-2.jpg);
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -18,7 +18,7 @@
     width: 74rem;
     height: 54rem;
     position: absolute;
-    
+
 }
 
 .berita-title {
@@ -32,13 +32,13 @@
     margin-bottom: 3.3rem;
 }
 
-.navmenu-berita{
+.navmenu-berita {
     background: linear-gradient(249deg, #59FFB9 -31.85%, #326CFF 101.31%);
     padding: 0.625rem 1.25rem;
     margin-bottom: 3.1rem;
 }
 
-.navmenu-berita a{
+.navmenu-berita a {
     color: #FFF;
     font-family: Montserrat;
     font-size: 1rem;
@@ -74,5 +74,48 @@
     overflow: hidden;
 }
 
+@media only screen and (max-width: 768px) {
 
+    .berita-konten {
 
+    }
+
+    .berita-content {
+        width: 100%;
+        overflow: visible;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding-right: 25rem;
+    }
+
+    .berita-container {
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding-right: 25rem;
+        /* overflow: visible; */
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+        /* height: auto; */
+        /* left: 0;
+        right: 0; */
+    }
+
+    
+
+    .berita-section {
+        width: 100%;
+        position: relative;
+        background: url(../assets/img/bg-2.jpg);
+        /* background: red; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        justify-content: center;
+        align-items: center;
+    }
+}
