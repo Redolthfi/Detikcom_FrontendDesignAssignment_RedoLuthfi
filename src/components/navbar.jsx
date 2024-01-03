@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import navbarImg from "../assets/img/navbar-brand.png";
-import categoryImg from "../assets/img/category.png";
+import categoryImg from "../assets/img/categoryIcon.png";
 import '../styles/navbar.css';
 
 const Navbar = () => {
