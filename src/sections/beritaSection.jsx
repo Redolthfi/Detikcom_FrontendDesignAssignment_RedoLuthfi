@@ -9,7 +9,7 @@ import artikelImg6 from '../assets/img/thumbnail-artikel-6.png';
 import CameraIcon from '../assets/img/cameraIcon.png';
 import CardTimeStamp from '../components/cardTimeStamp';
 import CardArtikel from '../components/cardArtikel';
-import PlayIcon from '../assets/img/play.png';
+import PlayIcon from '../assets/img/playIcon.png';
 import Buttons from '../components/button';
 
 
